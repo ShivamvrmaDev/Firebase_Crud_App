@@ -23,7 +23,7 @@ class Read : AppCompatActivity() {
                     t.text = a.get("id").toString()  //t is text view
                 }
             }
-var a=12wddwdb
+
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
