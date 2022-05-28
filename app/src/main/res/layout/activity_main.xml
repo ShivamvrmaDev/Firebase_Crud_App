@@ -21,7 +21,7 @@
         android:hint="name" />
 
     <EditText
-        android:id="@+id/price"
+        android:id="@+id/prices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/price"
+        android:layout_below="@+id/prices"
         android:hint="desc" />
     <EditText
         android:id="@+id/writer"

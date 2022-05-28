@@ -16,7 +16,7 @@ lateinit var price :EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        price=findViewById(R.id.price)
+        price=findViewById(R.id.prices)
       var  desc=findViewById<EditText>(R.id.desc)
       var  writer=findViewById<EditText>(R.id.writer)
       var  rating=findViewById<EditText>(R.id.rating)
@@ -26,7 +26,7 @@ lateinit var price :EditText
         id=findViewById(R.id.id)
         name=findViewById(R.id.name)
         val b=findViewById<Button>(R.id.b)
-
+var a=12
         ref=FirebaseDatabase.getInstance().getReference()
 
 b.setOnClickListener{
