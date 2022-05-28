@@ -30,7 +30,7 @@ lateinit var price :EditText
         ref=FirebaseDatabase.getInstance().getReference()
 
 b.setOnClickListener{
-
+uygcyuwgcyu
     var hello=price.text.toString()
     var name =name.text.toString()
     var id =id.text.toString()
