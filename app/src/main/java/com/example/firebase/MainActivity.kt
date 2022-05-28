@@ -26,7 +26,7 @@ lateinit var price :EditText
         id=findViewById(R.id.id)
         name=findViewById(R.id.name)
         val b=findViewById<Button>(R.id.b)
-var a=12
+
         ref=FirebaseDatabase.getInstance().getReference()
 
 b.setOnClickListener{
