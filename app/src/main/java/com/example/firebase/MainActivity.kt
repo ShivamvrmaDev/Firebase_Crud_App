@@ -31,6 +31,8 @@ lateinit var price :EditText
 
 b.setOnClickListener{
 uygcyuwgcyu
+
+    hhdehiuhkhkxs
     var hello=price.text.toString()
     var name =name.text.toString()
     var id =id.text.toString()
