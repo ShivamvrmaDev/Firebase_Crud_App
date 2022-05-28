@@ -27,6 +27,14 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/name"
         android:hint="price" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:hint="price" />
     <EditText
         android:id="@+id/desc"
         android:layout_width="match_parent"
