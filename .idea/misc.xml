@@ -3,8 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/drawable-anydpi/add.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable-anydpi/delete.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable-anydpi/down_arrow.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable-anydpi/id.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable-anydpi/search.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable/add.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable/et_style.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable/id.xml" value="0.2445" />
+        <entry key="app/src/main/res/drawable/ids.xml" value="0.2445" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_read.xml" value="0.33469202898550726" />
+        <entry key="app/src/main/res/layout/adapter.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_blank2.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_create_update.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_delete.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_read.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_viewpager.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/headers.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/menu-v26/icons.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/menu/icon.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/menu/icons.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>
