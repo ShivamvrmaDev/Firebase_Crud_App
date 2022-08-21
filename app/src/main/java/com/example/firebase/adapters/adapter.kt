@@ -27,9 +27,10 @@ class adapter(var data: ArrayList<Data>) : Adapter<adapter.viewholderclass>() {
     override fun onBindViewHolder(holder: viewholderclass, position: Int) {
 
 
-        holder.site.text=data[position].sitename.toString()
-         holder.id.text=data[position].IDs
-         holder.password.text= data[position].password.toString()
+        holder.site?.text=data[position].sitename.toString()
+         holder.id?.text=data[position].IDs
+         holder.password?.text= data[position].password.toString()
+
        Picasso.get().load(data[position].image).into(holder.image)
 
         }
@@ -39,10 +40,10 @@ class adapter(var data: ArrayList<Data>) : Adapter<adapter.viewholderclass>() {
     }
     class viewholderclass(view: View) : RecyclerView.ViewHolder(view) {
 
-        var site=view.findViewById<TextView>(R.id.site)
-        var id=view.findViewById<TextView>(R.id.id)
-        var password=view.findViewById<TextView>(R.id.password)
-        var image=view.findViewById<ImageView>(R.id.image)
+        var site: TextView? =view.findViewById(R.id.site)
+        var id : TextView? =view.findViewById<TextView>(R.id.id)
+        var password : TextView? =view.findViewById<TextView>(R.id.password)
+        var image : ImageView? =view.findViewById<ImageView>(R.id.image)
 
 
 

@@ -16,7 +16,7 @@
         android:layout_marginTop="100dp"
         android:text="Get Your Psswords Now"
         android:textColor="#9508EC"
-        android:textSize="38sp"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <TextView

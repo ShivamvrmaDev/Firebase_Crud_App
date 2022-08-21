@@ -13,7 +13,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.firebase.R
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 
 class delete : Fragment() {
@@ -31,32 +34,62 @@ var delete=view.findViewById<Button>(R.id.delete)
              b3.visibility=View.GONE
            var  reference= FirebaseDatabase.getInstance("https://retrieve-4329f-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("sites")
         delete.setOnClickListener {
-            var build = AlertDialog.Builder(activity as Context)
 
-            build.setTitle("Delete ")
-            build.setMessage("Are you sure you want to this site's details")
-            build.setPositiveButton("yes") { text, listner ->
-                var data=edit.text.toString()
-                reference.child(data).removeValue()
+            var data=edit.text.toString()
+            reference.addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.hasChild(data) && data.isNotEmpty()) {
 
-                    .addOnSuccessListener {
 
-                        edit.setText("")
-                        Toast.makeText(activity as Context,"$data deleted successfully", Toast.LENGTH_SHORT).show()
-                        b3.visibility=View.VISIBLE
-                        b3.setOnClickListener {
-                            view.findNavController().navigate(R.id.action_delete2_to_read)
+                        var build = AlertDialog.Builder(activity as Context)
+
+                        build.setTitle("Delete ")
+                        build.setMessage("Are you sure you want to this site's details")
+                        build.setPositiveButton("yes") { text, listner ->
+
+
+                            reference.child(data).removeValue()
+
+                                .addOnSuccessListener {
+
+                                    edit.setText("")
+                                    Toast.makeText(
+                                        activity as Context,
+                                        "$data deleted successfully",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                    b3.visibility = View.VISIBLE
+                                    b3.setOnClickListener {
+                                        view.findNavController()
+                                            .navigate(R.id.action_delete2_to_read)
+                                    }
+                                }
+
+                            build.setNegativeButton("No") { text, listner ->
+
+                            }
+
+                            build.create()
+                            build.show()
+
                         }
+                    }else{
+
+
+                        Toast.makeText(activity as Context, "Enter valid Value", Toast.LENGTH_SHORT).show()
                     }
-            }
-            build.setNegativeButton("No") { text, listner ->
+                }
 
-            }
+                    override fun onCancelled(error: DatabaseError) {
+                        TODO("Not yet implemented")
+                    }
 
-            build.create()
-            build.show()
 
+
+
+        })
         }
+
         return view
 
     }
