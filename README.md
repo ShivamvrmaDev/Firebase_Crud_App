@@ -1,6 +1,6 @@
 # Firebase_Crud_App
 #   Brief Introduction of the App
-Basically using this app you can save your id and passwords of any website and your details will also be saved on firebase database, that you can access any time any where. if you reinstall the app you will get your is passowrds again without ny headache.
+Basically using this app you can save your id and passwords of any website and your details will also be saved on firebase database, that you can access any time any where. if you reinstall the app you will get your details again without any headache.
 # Home page with all options
 # ![WhatsApp Image 2022-08-22 at 12 53 11 AM](https://user-images.githubusercontent.com/110259464/185808181-03bcd063-09f9-4c2c-8d3c-f40bc4cecc39.jpeg)
 # Details List
